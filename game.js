@@ -60,7 +60,7 @@ const generateGame = () => {
 
     const parser = new DOMParser().parseFromString(cards, "text/html");
     selectors.board.replaceWith(parser.querySelector(".board"));
-    selectors.board = document.querySelector(".board"); // Обновить ссылку
+    selectors.board = document.querySelector(".board");
 };
 
 const startGame = () => {
